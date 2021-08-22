@@ -1,0 +1,171 @@
+footer{
+    width: 100%;
+    background-color: rgb(34, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(165, 150, 150);
+    padding: 1rem ;
+  
+}
+footer .section-1{
+    width: 100%;
+    display: flex;
+}
+footer .section-1 .foot-1{
+    width: 55%;
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+}
+footer .section-1 .foot-1 h4{
+    padding-bottom: 10px;
+}
+footer .section-1 .foot-2{
+    width: 22%;
+    font-size: 14px;
+    padding: 10px;
+}
+footer .section-1 .foot-2 h4{
+    padding-left: 10%;
+    padding-bottom: 10px;
+}
+footer .section-1 .foot-2 ul{
+    list-style: none;
+}
+footer .section-1 .foot-2 ul li{
+    padding: 2px;
+}
+footer .section-1 .foot-2 a{
+    text-decoration: none;
+   
+    font-size: 14px;
+    color: rgb(165, 150, 150);
+}
+footer .section-1 .foot-2 a:hover{
+    color: yellow;
+}
+footer .section-2{
+    width: 100%;
+    padding-top: 0rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .section-2 .fa {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 4rem;
+    color: white;
+    border-radius: 50%;
+    margin-left: 1rem;
+    background-color: rgb(70, 64, 64);
+    transition: .2s;
+    
+}
+footer .section-2 .fa-facebook{
+    background-color: blue;
+}
+
+footer .section-2 .fa-facebook:hover {
+    background-color: rgb(70, 64, 64);
+
+}
+
+footer .section-2 .fa-twitter{
+    background-color: rgb(50, 160, 204);
+}
+footer .section-2 .fa-twitter:hover {
+    background-color: rgb(70, 64, 64);
+
+}
+footer .section-2 .fa-google-plus{
+    background-color: red;
+}
+
+footer .section-2 .fa-google-plus:hover {
+    
+    background-color: rgb(70, 64, 64);
+
+}
+footer .section-2 .fa-linkedin{
+    background-color: rgb(5, 87, 119);
+
+}
+
+footer .section-2 .fa-linkedin:hover {
+    background-color: rgb(70, 64, 64);
+
+}
+footer .section-2 .fa-dribbble{
+    background-color: rgb(238, 117, 137);
+
+}
+
+footer .section-2 .fa-dribbble:hover {
+    background-color: rgb(70, 64, 64);
+
+}
+.section-3 p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+    text-align: center;
+}
+/* ===================== MEDIA QUERIES ============================================ */
+
+
+@media (max-width: 800px) {
+    .foot-1 {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .foot-2 {
+        width: 28%;
+        float: left;
+    }
+}
+
+@media(max-width: 550px) {
+    .foot-2 {
+        width: 100%;
+        float: none;
+        margin-left: 20px;
+    }
+
+    footer .section-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    footer .section-2 .fa {
+        width: 3rem;
+        font-size: 20px;
+        margin: 20px 10px;
+        padding: 20px;
+        float: left;
+
+    }
+
+    footer .section-2::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    footer .section-1 .foot-1{
+        width: 55%;
+        font-size: 12px;
+        display: none;
+        
+        padding: 5px;
+    }
+    footer .section-1 .foot-2{
+        font-size: 14px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
