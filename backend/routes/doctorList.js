@@ -46,6 +46,16 @@ router.route('/:id/appointments').post((req, res) => {
 
     })
 })
+router.route('/:id/slot/:slotid').put((req, res) => {
+  Doctor.findById(req.params.id)
+    .then(doctor => {
+      doctor.slot.id(req.params.slotid).isBooked = true;
+      doctor.save().then(() => {
+        console.log('updated');
+      })
+
+    })
+})
 
 router.route('/:id').get((req, res) => {
   Doctor.findById(req.params.id)

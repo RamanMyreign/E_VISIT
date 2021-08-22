@@ -1,0 +1,794 @@
+*{
+  margin: 0;
+   box-sizing: border-box;
+ 
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+
+
+/*-------------------------- NAVBAR -------------------------------------------------*/
+
+.navbar{
+  height: 70px;
+  background-color: rgb(94, 24, 24);
+}
+.nav{
+  height: 100%;
+  display: flex;
+  padding: 10px 30px 20px 10px;
+}
+.logo
+{
+  color: white;
+  width: 50%;
+  display: flex;
+  padding-left: 4rem;
+  font-size: 1rem;
+  align-items: center;
+}
+.menu{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content:space-evenly;
+
+}
+
+.menu li a{
+  position: relative;
+  text-decoration: none;
+  padding: 15px 10x 60px 10px ;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s;
+}
+.menu li a:hover{
+  /* border-color: red; */
+  color:yellow;
+  font-size: 22px;
+  
+ 
+}
+.show-btn, .hide-btn{
+  position: absolute;
+  right: 10px;
+  width: 40px;
+  height: 40px; 
+  font-size: 30px;
+  padding: 4px; 
+  border-radius: 4px;
+  color: white;
+  display: none;
+
+
+}
+.hide-btn{
+  top: 10px;
+  right: 30px;
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -10;
+}
+
+
+
+/*-------------------------------------- CONTENT1 ---------------------------------------------- */
+
+.content1{
+  width: 100%;
+  margin-top: 10px;
+  height: 25rem;
+  background-color: skyblue;
+  background-image: url("../src/img/headerbackground1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center center; */
+  
+  font-size: 1rem;
+}
+.content1 .sub-content1{
+  width: 80%;
+  padding: 5rem;
+ 
+}
+.content1 .sub-content1 h1,p ,h4{
+  padding: 5px 10px 15px 5px;
+}
+.content1 .sub-content1 button{
+  height: 30px;
+  background-color: red;
+  width: 80px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.content1 .sub-content1 button a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* ----------------------------------------- CONTENT2  -------------------------------------------------------- */
+.content2{
+  
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 3rem;
+  padding-top: 30px;
+  padding-left: 15px
+ 
+}
+.sub-content2{
+  width: 40%;
+  background-color: rgb(253, 253, 207);
+  border-radius: 8px;
+  box-shadow: 10px 10px 8px 10px #888888;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 20px 15px 40px 15px;
+  background-color: transparent;
+}
+.sub-content2 p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ----------------------------------------- CONTENT3 -------------------------------------------------------- */
+
+.content3{
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  padding-top: 3rem;
+}
+.content3 table{
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  border: 4px solid black;
+  background-color: white;
+}
+.content3 tr{
+  border-top: 2px solid rgb(235, 229, 229);
+
+}
+.content3 tr:hover{
+  background-color: rgb(241, 232, 232);
+}
+.content3  caption {
+  background-color: rgb(14, 14, 66);
+  height: 3rem;
+  border-radius: 10px 10px 0px 0px;
+}
+.content3 caption b {
+  font-size: 20px;
+  text-align: center;
+  line-height: 3rem;
+  color: white;
+}
+.content3 th{
+  text-align: left;
+  height: 2rem;
+  font-size: 1.2rem;
+  background-color: orange;
+}
+.content3 th, td {
+  padding: 10px 15px;
+}
+
+.content3 tr:nth-child(even){
+  background-color: rgb(223, 235, 227);
+}
+.content3 tr:nth-child(odd){
+  background-color: rgb(205, 235, 215);
+}
+.content3 td{
+  padding-left: 2rem;
+}
+.content3 .book{
+  height: 2rem;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 4rem;
+  padding: 2px;
+  margin-right: 2px;
+}
+.content3 .cancel{
+  height: 2rem;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 4rem;
+  margin-top: 2px;
+}
+
+
+
+/* -------------------------------------------  SIGNUP FORM ----------------------------------------------------- */
+.signup{
+  background-color: rgb(254, 255, 226);
+  height: 100vh;
+  background-image: url('./img/14626352.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 5px solid red;
+
+}
+
+.signup-form{
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+
+}
+
+.signup-form h1{
+  padding-top: 30px;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.signup-form form {
+  width: 28%;
+  margin-left: 10%;
+  padding: 20px 20px 20px 50px;
+  box-shadow: 10px 10px 8px 10px #888888;
+  border-radius: 8px;
+}
+
+.signup-form form label{
+    font-size: 16px;
+    display: block;
+    padding: 20px 0px 4px 0px ;
+    color: black;
+    font-weight: bold;
+}
+.signup-form form input{
+  width: 80%;
+  border-radius: 4px;
+  height: 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid grey;
+  padding: 4px 4px 2px 10px;
+  font-size: 13px;
+}
+.signup-form form select{
+  width: 80%;
+  border-radius: 4px;
+  height: 20px;
+  padding-top: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid grey;
+  padding: 4px 4px 2px 10px;
+  font-size: 14px;
+}
+.signup-form .submit{
+  display: block;
+  background-color: blue;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
+  width: 4rem;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+.signup-form .li{
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: blue;
+
+  margin-top: 15px;
+}
+.signup-form .submit:hover{
+  background-color: rgb(23, 112, 148);
+}
+
+/* --------------------------------------------LOGIN FORM-------------------------------------------------------- */
+.login{
+  background-image: url('./img/medical-desk-arrangement-pink-background-with-copy-space_23-2148502950.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  margin-top: -20px;
+  width: 100%;
+}
+.login-form{
+  width: 60%;
+  margin: auto;
+  padding: 10px 10px 15px 15px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+.login h1{
+  text-align: right;
+  margin-right: 38%;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+.login p{
+  color: red;
+}
+.login-form form{
+  width: 42%;
+  margin-left:  40%;
+  box-shadow: 10px 10px 8px 10px #888888;
+  padding: 30px 30px 30px 50px;
+  border-radius: 8px;
+
+}
+.login-form form label{
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 8px;
+
+}
+.login-form form input{
+  width: 80%;
+  margin-left: 1rem;
+  border: none;
+  border-bottom: 2px solid rgb(185, 159, 159);
+  padding: 4px;
+  outline: none;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+.login-form form .submit{
+  display: block;
+  width: 100px;
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 35px;
+}
+.login-form .li{
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+
+
+
+/* ---------------------------------------- ADDDOCTOR -------------------------------------------------------- */
+.addDoctor{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/736x/a7/c1/4c/a7c14c5ed96da0070a4ddc884412b9e4.jpg');
+  padding: 100px;
+}
+.addDoctor-form{
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 8px 10px #635454;
+  border-radius: 8px ;
+
+}
+.addDoctor-form form{
+  width: 100%;
+}
+.addDoctor-form div{
+  padding: 15px;
+  width: 60%;
+  font-size: 25px;
+}
+.addDoctor-form div input{
+  margin: 10px;
+  color: black;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid rgb(109, 101, 101);
+  width: 40%;
+  outline: none;
+  background: transparent;
+}
+
+.addDoctor-form div span input{
+  width: 27%;
+}
+.addDoctor .space{
+  height: 30vh;
+}
+
+.addDoctor-form h1{
+  margin-bottom: 50px;
+}
+
+
+.addDoctor-form .submit{
+  margin-left: 10px;
+  height: 30px;
+  color: white;
+  background-color: blue;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 70px;
+}
+
+
+
+
+
+
+
+
+.home .body{
+  background-image: url('./img/nice-watercolor-background_24837-261.jpg');
+ 
+  background-repeat: none;
+  background-size: cover;
+  padding-bottom: 15%;
+}
+.home1{
+  text-align: center;
+  margin: 30px auto;
+  padding: 30px 15px;
+}
+.home1 p{
+  font-weight: bold;
+  font-family:cursive;
+  padding: 30px;
+}
+.home1 hr{
+  width: 10%;
+  margin: auto;
+  margin-top: 8px;
+}
+.home2{
+  width: 100%;
+}
+
+.home2 .row-content{
+  display: flex;
+  padding: 20px 15px 40px 15px;
+  width: 100%;
+}
+.home2 .row-content .col-content{
+  box-shadow: 6px 6px 15px 15px #888888;
+  padding: 10px 15px 40px 10px;
+  border-radius: 8px;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  width: 25%;
+}
+.home2 .row-content .col-content h3{
+  padding-left: 15px;
+  display: inline;
+}
+.home2 .row-content .col-content p{
+  font-size: 13px;
+}
+
+/* ============================  ADMIN ===================================================== */
+
+
+.admin-main{
+  background-image: url('https://i.pinimg.com/736x/a7/c1/4c/a7c14c5ed96da0070a4ddc884412b9e4.jpg');
+  background-repeat: no-repeat;
+  background-size:100%;
+
+  height: 90vh;
+  padding-top: 10%;
+}
+.admin-main p{
+  color: red;
+  font-weight: bolder;
+}
+.admin{
+  width: 40%;
+  padding-top: 5%;
+  margin-left: 40%;
+  box-shadow: 6px 6px 15px 15px #888888;
+  padding: 30px 30px 30px 50px;
+  border-radius: 8px;
+
+}
+.admin h1{
+  margin-bottom: 30px;
+}
+.admin form{
+  width: 60%;
+}
+.admin label{
+  font-weight: bolder;
+}
+.admin form input{
+  
+  margin: 10px 0px;
+  width: 80%;
+  margin-left: 15px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid grey;
+  padding: 2px 5px;
+}
+
+.admin .submit{
+  width: 80px;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  border: none;
+  outline: none;
+   border-radius: 4px;
+}
+
+/* ==============================================   About Us ================================================== */
+.aboutus{
+  height: 100vh;
+  background-color: rgb(191, 220, 231);
+  font-size: 16px;
+  padding: 20px 40px 30px 40px;
+}
+.aboutus h1{
+  text-align: center;
+  margin-bottom: 50px;
+  
+}
+.aboutus h3{
+  margin-bottom: 40px;
+}
+.aboutus .para p{
+  color: blue;
+}
+
+.aboutus h2{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+
+
+
+/* ---------------------------------- USER DASHBORAD ------------------------------------------------------------ */
+
+.userDashboard {
+  background-color: rgb(255, 238, 238);
+  margin-top: 10px;
+  position: relative;
+}
+.userDashboard .header{
+  display: flex;
+  padding-top: 3rem ;
+  width: 100%;
+  padding-left: 3rem;
+  background-color: rgb(211, 211, 247);
+  margin-bottom: 30px;
+  padding-bottom: 3rem;
+}
+
+.userDashboard .header .header1{
+  height: 100%;
+  padding-left: 4rem;
+  width: 50%;
+}
+.userDashboard .header .header2{
+  width: 24%;
+  margin-top: 1rem;
+  padding-left: 5rem;
+  height: 55%;
+  border-radius: 50%;
+  
+}
+.userDashboard .header .header1 h4{
+  color: red;
+}
+.userDashboard .header .header1 p{
+  font-weight: bold;
+}
+.userDashboard .header .header2 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userDashboard .header button{
+  margin-left: 150px;
+  margin-right: 30px;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  font-weight: bolder;
+  color: white;
+
+}
+
+/* =========================================== Modal ================================================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: 60%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(236, 225, 225);
+  border-radius: 8px;
+}
+
+.display-block {
+  display: block;
+}
+
+.main-content {
+  margin: 2rem;
+}
+
+.slotContainer {
+  display: flex;
+  justify-content:start;
+  width: 100%;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  overflow-x: scroll;
+}
+.main-content i{
+  margin-left: 5%;
+  display: block;
+  color: red;
+  padding-top: 1rem;
+}
+.main-content .g{
+  margin-left: 5%;
+  display: block;
+  color: grey;
+  padding-top: 1rem;
+}
+
+.slot {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: grey;
+  margin: 2rem;
+  box-shadow: 6px 6px 15px 15px #969696;
+  
+}
+.bookSlot{
+  border: 2px solid red;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: rgb(199, 158, 158);
+  margin: 2rem;
+  box-shadow: 6px 6px 15px 15px #969696;
+}
+.bookSlot span{
+  color: white;
+  font-weight: bold;
+}
+.bookSlot1 span{
+  color: white;
+  font-weight: bold;
+}
+.bookSlot1{
+  border: 2px solid red;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: red;
+  padding: 1rem;
+  
+  margin: 2rem;
+  box-shadow: 6px 6px 15px 15px #969696;
+}
+.bookSlot:hover{
+  background-color: skyblue;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button {
+  width: 68px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+   border-radius: 3px;
+}
+
+
+/* ========================================= FOOTER =================================================== */
+
+@media (max-width:800px){
+  .signup-form form {
+    width: 50%;
+    /* height: 60vh; */
+  }
+  .admin{
+    width: 55%;
+  }
+
+
+  .show-btn, .hide-btn{
+    display: block;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60vh;
+    background-color: rgb(63, 22, 22);
+    text-align: center;
+    padding: 20px 0px;
+    transition: .7s;
+    line-height: normal;
+}
+#chk:checked ~ .menu{
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.menu li{
+    display: block;
+    padding: 10px;
+}
+.menu li a{
+    display: block;
+    border-bottom: none;
+
+}
+.login-form {
+  
+  width: 100%;
+}
+
+.login-form form{
+  width: 50%;
+  margin-left:  20%;
+  box-shadow: 10px 10px 8px 10px #888888;
+  padding: 30px 30px 30px 50px;
+  border-radius: 8px;
+
+}
+}
+
+
