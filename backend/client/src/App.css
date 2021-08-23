@@ -81,15 +81,13 @@
 /*-------------------------------------- CONTENT1 ---------------------------------------------- */
 
 .content1{
-  width: 100%;
+ width: 100%;
   margin-top: 10px;
-  height: 25rem;
   background-color: skyblue;
   background-image: url("../src/img/headerbackground1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center center; */
-  
+  padding-bottom: 5rem;  
   font-size: 1rem;
 }
 .content1 .sub-content1{
