@@ -15,6 +15,12 @@ npm install
 cd client
 npm install
 ```
+### To Run server and client with single command 
+```sh
+npm run dev
+```
+
+### OR Use the below instructions
 
 ### Run Server (by writing below command in backend folder)
 ```sh
