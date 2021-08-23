@@ -27,3 +27,11 @@ npm start
 ```
 
 
+### Login credential for Admin
+
+
+```sh
+username:  ramanshukla
+Passwword:  Admin@123
+
+```
