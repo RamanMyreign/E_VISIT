@@ -16,9 +16,14 @@ cd client
 npm install
 ```
 
-### Run both Express & React from root
+### Run Server (by writing below command in backend folder)
 ```sh
-npm run dev
+nodemon server.js
 ```
-Note- npm run dev should be executed in root not client
+### Run Client  (inside client folder)
+```sh
+cd client
+npm start
+```
+
 
